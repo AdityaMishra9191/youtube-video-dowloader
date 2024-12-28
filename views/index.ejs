@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YouTube Video Downloader</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <i class="fab fa-youtube"></i>
+            <h1>YouTube Video Downloader</h1>
+        </div>
+        
+        <div class="download-form">
+            <div class="input-group">
+                <i class="fas fa-link"></i>
+                <input type="text" id="videoUrl" placeholder="Paste YouTube URL here">
+            </div>
+            <button onclick="downloadVideo()">
+                <i class="fas fa-download"></i> Download
+            </button>
+        </div>
+
+        <div id="status" class="status"></div>
+        <div id="preview" class="preview"></div>
+        <div id="download-link" class="download-link"></div>
+
+        <div class="loading-spinner" id="loading-spinner">
+            <div class="spinner"></div>
+        </div>
+    </div>
+
+    <footer>
+        <p>Created by Aditya Kumar Mishra</p>
+        <p>Data Science | NIET</p>
+    </footer>
+
+    <script src="/js/script.js"></script>
+</body>
+</html>
